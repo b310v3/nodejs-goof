@@ -24,7 +24,7 @@ pipeline {
 
 	stage ('Lint Analysis with Jshint') {
 	    steps {
-		sh '/home/b310v3_jenkins_test}/eslint-script.sh'
+		sh '/home/b310v3_jenkins_test/eslint-script.sh'
 	    }
 	}
     }
