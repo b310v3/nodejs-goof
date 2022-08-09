@@ -18,13 +18,13 @@ pipeline {
 
 	stage ('NPM Audit Analysis') {
             steps {
-                sh '/home/b310v3_jenkins_test/npm-audit.sh'
+                sh '/bitnami/jenkins/home/npm-audit.sh'
             }
         }
 
 	stage ('Lint Analysis with Jshint') {
 	    steps {
-		sh '/home/b310v3_jenkins_test/jshint-script.sh'
+		sh '/bitnami/jenkins/home/jshint-script.sh'
 	    }
 	}
     }
